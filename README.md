@@ -1,4 +1,4 @@
-簡易版 Dashboard
+簡易版 Dashboard, 使用 D3.js 畫圖
 
 # pre install
 * sbt
