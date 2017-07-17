@@ -1,0 +1,297 @@
+@()
+
+@index("Dashboard") {
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-2 col-md-6 col-sm-6">
+				<div class="card card-stats">
+					<div class="card-header" data-background-color="orange" id="whole-site">
+						<i class="material-icons">store</i>
+					</div>
+					<div class="card-content">
+						<p class="category"></p>
+						<h3 class="title">全站</h3>
+					</div>
+					<div class="card-footer">
+
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-2 col-md-6 col-sm-6">
+				<div class="card card-stats">
+					<div class="card-header" data-background-color="blue" id="sport">
+						<i class="material-icons">fitness_center</i>
+					</div>
+					<div class="card-content">
+						<p class="category"></p>
+						<h3 class="title">運動</h3>
+					</div>
+					<div class="card-footer">
+
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-6 col-sm-6">
+				<div class="card card-stats">
+					<div class="card-header" data-background-color="green" id="boutique">
+						<i class="material-icons">credit_card</i>
+					</div>
+					<div class="card-content">
+						<p class="category"></p>
+						<h3 class="title">精品</h3>
+					</div>
+					<div class="card-footer">
+
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-6 col-sm-6">
+				<div class="card card-stats">
+					<div class="card-header" data-background-color="red" id="game-competition">
+						<i class="material-icons">videogame_asset</i>
+					</div>
+					<div class="card-content">
+						<p class="category"></p>
+						<h3 class="title">電競</h3>
+					</div>
+					<div class="card-footer">
+
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-6 col-sm-6">
+				<div class="card card-stats">
+					<div class="card-header" data-background-color="purple" id="smart-home">
+						<i class="material-icons">fingerprint</i>
+					</div>
+					<div class="card-content">
+						<p class="category"></p>
+						<h3 class="title">物聯</h3>
+					</div>
+					<div class="card-footer">
+
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-6 col-sm-6">
+				<div class="card card-stats">
+					<div class="card-header" data-background-color="blue">
+						<i class="fa fa-facebook"></i>
+					</div>
+					<div class="card-content">
+						<p class="category">Fans</p>
+						<h3 class="title">+312</h3>
+					</div>
+					<div class="card-footer">
+						<div class="stats">
+							<i class="material-icons">update</i> Just Updated
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<div class="row">
+			<div class="col-md-6">
+				<div class="card">
+					<div class="card-header card-chart" data-background-color="white">
+						<svg id="web-visitor" width="490" height="160"></svg>
+						<div id="time-web-visitor" class="btn-group  btn-group-sm" role="group" aria-label="...">
+							<button type="button" class="btn btn-info" id="time-web-visitor-today">Today</button>
+							<button type="button" class="btn btn-info" id="time-web-visitor-7d">7 Days</button>
+							<button type="button" class="btn btn-info" id="time-web-visitor-1m">1 Month</button>
+							<button type="button" class="btn btn-info" id="time-web-visitor-12m">12 Month</button>
+						</div>
+
+					</div>
+					<div class="card-content">
+
+						<h4 class="title">訪客數：WEB</h4>
+						<p class="category"><span class="text-success"><i class="fa fa-long-arrow-up"></i> 35%  </span> 今日累積訪客數：<span id="web-visitor-summarize"></span></p>
+					</div>
+					<div class="card-footer">
+						<div class="stats">
+							<i class="material-icons">access_time</i> updated 5 seconds ago
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="card">
+					<div class="card-header card-chart" data-background-color="white">
+						<svg id="app-visitor" width="490" height="160"></svg>
+						<div id="time-app-visitor" class="btn-group  btn-group-sm" role="group" aria-label="...">
+							<button type="button" class="btn btn-info" id="time-app-visitor-today">Today</button>
+							<button type="button" class="btn btn-info" id="time-app-visitor-7d">7 Days</button>
+							<button type="button" class="btn btn-info" id="time-app-visitor-1m">1 Month</button>
+							<button type="button" class="btn btn-info" id="time-app-visitor-12m">12 Month</button>
+						</div>
+					</div>
+					<div class="card-content">
+						<h4 class="title">訪客數：APP</h4>
+						<p class="category">今日累積訪客數：<span id="app-visitor-summarize"></span></p>
+					</div>
+					<div class="card-footer">
+						<div class="stats">
+							<i class="material-icons">access_time</i> updated 5 seconds ago
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-6">
+				<div class="card">
+					<div class="card-header card-chart" data-background-color="white">
+						<svg id="web-conversionRate" width="490" height="160"></svg>
+						<div id="time-web-conversionRate" class="btn-group  btn-group-sm" role="group" aria-label="...">
+							<button type="button" class="btn btn-info" id="time-web-conversionRate-today">Today</button>
+							<button type="button" class="btn btn-info" id="time-web-conversionRate-7d">7 Days</button>
+							<button type="button" class="btn btn-info" id="time-web-conversionRate-1m">1 Month</button>
+							<button type="button" class="btn btn-info" id="time-web-conversionRate-12m">12 Month</button>
+						</div>
+					</div>
+					<div class="card-content">
+						<h4 class="title">轉換率：WEB</h4>
+						<p class="category"><span class="text-success"><i class="fa fa-long-arrow-up"></i> 58%  </span> 今日累積：<span id="web-conversionRate-summarize"></span></p>
+					</div>
+					<div class="card-footer">
+						<div class="stats">
+							<i class="material-icons">access_time</i> updated 5 seconds ago
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="card">
+					<div class="card-header card-chart" data-background-color="white">
+						<svg id="app-conversionRate" width="490" height="160"></svg>
+						<div id="time-app-conversionRate" class="btn-group  btn-group-sm" role="group" aria-label="...">
+							<button type="button" class="btn btn-info" id="time-app-conversionRate-today">Today</button>
+							<button type="button" class="btn btn-info" id="time-app-conversionRate-7d">7 Days</button>
+							<button type="button" class="btn btn-info" id="time-app-conversionRate-1m">1 Month</button>
+							<button type="button" class="btn btn-info" id="time-app-conversionRate-12m">12 Month</button>
+						</div>
+					</div>
+					<div class="card-content">
+						<h4 class="title">轉換率：APP</h4>
+						<p class="category">今日累積：<span id="app-conversionRate-summarize"></span></p>
+					</div>
+					<div class="card-footer">
+						<div class="stats">
+							<i class="material-icons">access_time</i> updated 5 seconds ago
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+			<!--origin order -->
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card">
+					<div class="card-header card-chart" data-background-color="white">
+						<svg id="order-source" width="960" height="400"></svg>
+						<div id="time-order-source" class="btn-group  btn-group-sm" role="group" aria-label="...">
+							<button type="button" class="btn btn-info" id="time-order-source-today">Today</button>
+							<button type="button" class="btn btn-info" id="time-order-source-7d">7 Days</button>
+							<button type="button" class="btn btn-info" id="time-order-source-1m">1 Month</button>
+							<button type="button" class="btn btn-info" id="time-order-source-12m">12 Month</button>
+						</div>
+					</div>
+					<div class="card-content">
+						<h4 class="title">營收：來源</h4>
+						<p class="category"><span class="text-success"><i class="fa fa-long-arrow-up"></i> 55%  </span> increase in today sales.</p>
+					</div>
+					<div class="card-footer">
+						<div class="stats">
+							<i class="material-icons">access_time</i> updated 5 seconds ago
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card">
+					<div class="card-header card-chart" data-background-color="white">
+						<svg id="order-customer" width="960" height="400"></svg>
+						<div id="time-order-customer" class="btn-group  btn-group-sm" role="group" aria-label="...">
+							<button type="button" class="btn btn-info" id="time-order-customer-7d">7 Days</button>
+							<button type="button" class="btn btn-info" id="time-order-customer-1m">1 Month</button>
+							<button type="button" class="btn btn-info" id="time-order-customer-12m">12 Month</button>
+						</div>
+					</div>
+					<div class="card-content">
+						<h4 class="title">營收：顧客</h4>
+						<p class="category"><span class="text-success"><i class="fa fa-long-arrow-up"></i> 55%  </span> increase in today sales.</p>
+					</div>
+					<div class="card-footer">
+						<div class="stats">
+							<i class="material-icons">access_time</i> updated 5 seconds ago
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+}{
+	<script type="text/javascript">
+			$(document).ready(function(){
+
+				init();
+
+				setInterval(todaySummarize, 5000);
+
+				$( "#whole-site" ).click(onCategoryClick('1'));
+
+				$( "#sport" ).click(onCategoryClick('2'));
+
+				$( "#boutique" ).click(onCategoryClick('3'));
+
+				$( "#game-competition" ).click(onCategoryClick('4'));
+
+				$( "#smart-home" ).click(onCategoryClick('5'));
+
+				$(".btn-group > button.btn").each(function(index) {
+					if(this.id.indexOf("7d") > -1)
+						$(this).addClass('btn-success')
+				})
+
+				$("#time-web-visitor").children().click(onDailyChartTimeClick);
+
+				$("#time-app-visitor").children().click(onDailyChartTimeClick);
+
+				$("#time-web-conversionRate").children().click(onDailyChartTimeClick);
+
+				$("#time-app-conversionRate").children().click(onDailyChartTimeClick);
+
+				$("#time-order-source").children().click(onOrderChartTimeClick);
+
+				$("#time-order-customer").children().click(onOrderChartTimeClick);
+
+
+			});
+
+	</script>
+}
+
+
+
+
+

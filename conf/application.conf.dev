@@ -1,0 +1,19 @@
+# https://www.playframework.com/documentation/latest/Configuration
+
+play.filters.headers.contentSecurityPolicy=null
+
+play.filters.hosts {
+  # Allow requests to example.com, its subdomains, and localhost:9000.
+  allowed = ["localhost:9000"]
+}
+
+tag {
+  x = ["手機保護套", "咖哩調理包", "行動電源", "衛生紙", "日式料理", "保護貼", "無線", "冷氣", "果汁機"]
+  y = ["東南亞", "長靴", "日本", "豆乾", "口紅"]
+}
+
+# set key
+play.http.secret.key = "secret_key"
+
+# set password
+ url = "jdbc:mariadb://127.0.0.1:3306/dashboard?user=demo&password="
